@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quotes</title>
+</head>
+<body>
+  <a href="/">Home</a>
+  <h1>Check out all the awesome quotes!</h1>
+  <% for (var i in quotes) { %>
+    <h3>Author: <%= quotes[i].name %></h3>
+    <p>Quote: <%= quotes[i].quote %> 
+       
+        at <%= quotes[i].updatedAt %>
+        <!-- <% var d = new Date() %>
+        <%= d.toUTCString() %> -->
+      </p>
+
+  <% } %>
+</body>
+</html>
